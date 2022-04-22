@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body>div {
+    margin: 0;
+}
+
+.btn+.btn {
+    margin-left: 12px;
+}
+
+.btn {
+    padding: 12px 48px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    transition: opacity 0.4s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn--success {
+    background-color: #71be34;
+}
+
+.btn--warn {
+    background-color: #ffb702;
+}
+
+.btn--danger {
+    background-color: #ff623d;
+}
+
+.btn--exit {
+    opacity: 0.5 !important;
+    cursor: default;
+}
